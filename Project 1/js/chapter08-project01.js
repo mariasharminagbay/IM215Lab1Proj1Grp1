@@ -11,8 +11,25 @@ for(i=0; i < filenames.length; i++){
    
 }
 
-alert(subTotal);
-var txtSubTotal = document.querySelectorAll("subTotal");
-txtSubTotal.getElementById("subTotal").innerHTML = subTotal;
+// for SubTotal
+document.getElementById('subTotal').innerHTML = "$ " + subTotal.toFixed(2); 
 
-//hsubTotal
+//compute for Tax:
+var tax = (subTotal * .10);
+document.getElementById('Tax').innerHTML = "$ " + tax.toFixed(2);
+
+//compute for shipping:
+var shipping = 0;
+if (subTotal > 1000){
+   shipping = 40;
+}
+else{shipping = 0;}
+
+document.getElementById('Shipping').innerHTML = "$ " + shipping.toFixed(2);
+
+//compute for GrandTotal
+var TotalAll = 0;
+TotalAll = subTotal - tax - shipping;
+
+document.getElementById('grndTotal').innerHTML = "$ " + TotalAll.toFixed(2);
+
