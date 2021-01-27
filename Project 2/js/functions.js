@@ -5,18 +5,21 @@ function outputCoutryBox(name, continent, cities,photos) {
         document.write('<h4>'+ continent +'</h4>');
 
         outputCities(cities);
+        
         outputPhotos(photos);
 
         document.write('<button>Visit</button>');
         document.write('</div>');
             function outputCities(cities)
             {
+                alert(CNcities.length);
+                alert(CNcities[0]);
                 document.write('<div class="inner-box">');
                 document.write('<h3>Cities</h3>');
 
                 if (name == "Canada")
                 {
-                    for  (var i = 0; i < CNcities.length; i++)
+                    for  ( i = 0; i < CNcities.length; i++)
                     {
                         cities = document.write('<li>' +CNcities[i]+ '</li>');
                     }
@@ -24,21 +27,21 @@ function outputCoutryBox(name, continent, cities,photos) {
 
                 if (name == "United States")
                 {
-                    for  (var i = 0; i < UScities.length; i++)
+                    for  ( i = 0; i < UScities.length; i++)
                     {
                         cities = document.write('<li>' +UScities[i]+ '</li>');
                     }
                 }
                 if (name == "Italy")
                 {
-                    for  (var i = 0; i < ITcities.length; i++)
+                    for  (i = 0; i < ITcities.length; i++)
                     {
                         cities = document.write('<li>' +ITcities[i]+ '</li>');
                     }
                 }
                 if (name == "Spain")
                 {
-                    for  (var i = 0; i < SPcities.length; i++)
+                    for  ( i = 0; i < SPcities.length; i++)
                     {
                        cities =  document.write('<li>' +SPcities[i]+ '</li>');
                     }
@@ -52,7 +55,7 @@ function outputCoutryBox(name, continent, cities,photos) {
 
                 if (name == "Canada")
                 {
-                    for  (var i = 0; i < CNphotos.length; i++)
+                    for  (i = 0; i < CNphotos.length; i++)
                     {
                       photos =  document.write('<li>' +CNphotos[i]+ '</li>');
                     }
@@ -60,21 +63,21 @@ function outputCoutryBox(name, continent, cities,photos) {
 
                 if (name == "United States")
                 {
-                    for  (var i = 0; i < USphotos.length; i++)
+                    for  ( i = 0; i < USphotos.length; i++)
                     {
                         photos = document.write('<li>' +USphotos[i]+ '</li>');
                     }
                 }
                 if (name == "Italy")
                 {
-                    for  (var i = 0; i < ITphotos.length; i++)
+                    for  (i = 0; i < ITphotos.length; i++)
                     {
                         photos = document.write('<li>' +ITphotos[i]+ '</li>');
                     }
                 }
                 if (name == "Spain")
                 {
-                    for  (var i = 0; i < SPphotos.length; i++)
+                    for  ( i = 0; i < SPphotos.length; i++)
                     {
                         photos =  document.write('<li>' +SPphotos[i]+ '</li>');
                     }
