@@ -18,7 +18,7 @@ function outputCoutryBox(name, continent, cities,photos) {
                 {
                     for  (var i = 0; i < CNcities.length; i++)
                     {
-                        document.write('<li>' +CNcities[i]+ '</li>');
+                        cities = document.write('<li>' +CNcities[i]+ '</li>');
                     }
                 }
 
@@ -26,21 +26,21 @@ function outputCoutryBox(name, continent, cities,photos) {
                 {
                     for  (var i = 0; i < UScities.length; i++)
                     {
-                        document.write('<li>' +UScities[i]+ '</li>');
+                        cities = document.write('<li>' +UScities[i]+ '</li>');
                     }
                 }
                 if (name == "Italy")
                 {
                     for  (var i = 0; i < ITcities.length; i++)
                     {
-                        document.write('<li>' +ITcities[i]+ '</li>');
+                        cities = document.write('<li>' +ITcities[i]+ '</li>');
                     }
                 }
                 if (name == "Spain")
                 {
                     for  (var i = 0; i < SPcities.length; i++)
                     {
-                        document.write('<li>' +SPcities[i]+ '</li>');
+                       cities =  document.write('<li>' +SPcities[i]+ '</li>');
                     }
                 }
                 document.write('</div>');
@@ -54,7 +54,7 @@ function outputCoutryBox(name, continent, cities,photos) {
                 {
                     for  (var i = 0; i < CNphotos.length; i++)
                     {
-                        document.write('<li>' +CNphotos[i]+ '</li>');
+                      photos =  document.write('<li>' +CNphotos[i]+ '</li>');
                     }
                 }
 
@@ -62,23 +62,25 @@ function outputCoutryBox(name, continent, cities,photos) {
                 {
                     for  (var i = 0; i < USphotos.length; i++)
                     {
-                        document.write('<li>' +USphotos[i]+ '</li>');
+                        photos = document.write('<li>' +USphotos[i]+ '</li>');
                     }
                 }
                 if (name == "Italy")
                 {
                     for  (var i = 0; i < ITphotos.length; i++)
                     {
-                        document.write('<li>' +ITphotos[i]+ '</li>');
+                        photos = document.write('<li>' +ITphotos[i]+ '</li>');
                     }
                 }
                 if (name == "Spain")
                 {
                     for  (var i = 0; i < SPphotos.length; i++)
                     {
-                        document.write('<li>' +SPphotos[i]+ '</li>');
+                        photos =  document.write('<li>' +SPphotos[i]+ '</li>');
                     }
                 }
                 document.write('</div>');
             }
 }
+
+

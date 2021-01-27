@@ -10,6 +10,13 @@
     var ITphotos = ["images/italy1.jpg","images/italy2.jpg","images/italy3.jpg","images/italy4.jpg","images/italy5.jpg","images/italy6.jpg"];
     var SPphotos = ["images/spain1.jpg","images/spain2.jpg"];
 
+    function Country(name, continent, cities, photos) {
+        this.name = name;
+        this.continent = continent;
+        this.cities = cities;
+        this.photos = photos;
+    }
+
     for(i=0; i < 7; i++)
     {
     var countries = [
