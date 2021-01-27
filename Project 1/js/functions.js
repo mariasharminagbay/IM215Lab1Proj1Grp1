@@ -5,6 +5,8 @@ function calculateTotal(price, quantity) {
 }
 
 function outputCartRow(file, title, quantity, price, total) {
+    // var file = filenames;
+    console.log(file);
     document.write('<tr>')
     document.write('<td><img src="../Project 1/images/' + file + '"></td>');
     document.write('<td>' + title + '</td>');
