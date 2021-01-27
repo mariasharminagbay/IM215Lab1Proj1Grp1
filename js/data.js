@@ -13,3 +13,4 @@ var prices = [80, 125, 75];
          into an array of cart item objects. Objects are used in
          projects 2 and 3.
 */         
+
