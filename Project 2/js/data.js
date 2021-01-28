@@ -1,6 +1,6 @@
 /* define your array of object literals here */
 
-    var CNcities = ["Calgary","Montreal","Toronto"];
+   /* var CNcities = ["Calgary","Montreal","Toronto"];
     var UScities = ["Boston","Chicago","New York","Seattle","Washington"];
     var ITcities = ["Florence","Milan","Naples","Rome"];
     var SPcities = ["Almeria","Barcelona","Madrid"];
@@ -15,14 +15,26 @@
         this.continent = continent;
         this.cities = cities;
         this.photos = photos;
-    }
+    }*/
 
-    for(i=0; i < 7; i++)
+   /* for(i=0; i < 7; i++)
     {
     var countries = [
         new Country("Canada", "North America", CNcities[i], CNphotos[i]),
         new Country("United States", "North America", UScities[i], USphotos[i]),
         new Country("Italy", "Europe", ITcities[i], ITphotos[i]),
         new Country("Spain", "Europe", SPcities[i], SPphotos[i]),
+    ]; 
+
+    }*/
+    var countries = [
+        { continent: 'North America', country:[
+            { name: 'Canada', cities:['Calgary','Montreal','Toronto'], photos: ['canada1.jpg','canada2.jpg','canada3.jpg']},
+            { name: 'United States', cities:['Boston','Chicago','New York','Seattle','Washington'], photos: ['us1.jpg','us2.jpg']}
+        ]},
+        { continent: 'Europe', country:[
+            { name: 'Italy', cities:['Florenco','Milan','Naples','Rome'], photos:['italy1.jpg','italy2.jpg','italy3.jpg','italy4.jpg','italy5.jpg','italy6.jpg']},
+            { name: 'Spain', cities:['Almenia','Barcelona','Madrid'], photos:['spain1.jpg','spain2.jpg']}
+        ]}
+
     ];
-}
