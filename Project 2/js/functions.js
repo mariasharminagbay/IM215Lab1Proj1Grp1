@@ -2,23 +2,18 @@
 
 function outputCountryBox(name, continent, cities, photos) {
 
-    // console.log(name);
-    // console.log(continent);
-    // console.log(cities[0] + '&' + cities[1]);
-    // console.log(photos[0] + '&' + photos[1]);document.write('<div class="item"');
-   // document.write('<div class="flex-container justify">');
     document.write('<div class="item">');
-            document.write('<h2>'+ name+ '</h2>');
-            document.write('<h4>'+ continent +'</h4>');
+    document.write('<h2>'+ name+ '</h2>');
+    document.write('<h4>'+ continent +'</h4>');
     
-            outputCities(cities);
+        outputCities(cities);
             
-            outputPhotos(photos);
+        outputPhotos(photos);
     
-            document.write('<button>Visit</button>');
-            document.write('</div>');
-          // document.write('</div>');
-                function outputCities(cities)
+    document.write('<button>Visit</button>');
+    document.write('</div>');
+          
+            function outputCities(cities)
                 {
                     
                     document.write('<div class="inner-box">');
