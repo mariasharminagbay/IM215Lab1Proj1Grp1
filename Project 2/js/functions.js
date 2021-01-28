@@ -2,19 +2,45 @@
 
 function outputCountryBox(name, continent, cities, photos) {
 
-    console.log(name);
-    console.log(continent);
-    console.log(cities[0] + '&' + cities[1]);
-    console.log(photos[0] + '&' + photos[1]);
-    //first function - generate markup for the cities
-    function outputCities(){
-
-    }// end outputCities
-
-    //second function - generate markup for the photos
-    function outputPhotos(){
-
-    }
+    // console.log(name);
+    // console.log(continent);
+    // console.log(cities[0] + '&' + cities[1]);
+    // console.log(photos[0] + '&' + photos[1]);document.write('<div class="item"');
+   // document.write('<div class="flex-container justify">');
+    document.write('<div class="item">');
+            document.write('<h2>'+ name+ '</h2>');
+            document.write('<h4>'+ continent +'</h4>');
+    
+            outputCities(cities);
+            
+            outputPhotos(photos);
+    
+            document.write('<button>Visit</button>');
+            document.write('</div>');
+          // document.write('</div>');
+                function outputCities(cities)
+                {
+                    
+                    document.write('<div class="inner-box">');
+                    document.write('<h3>Cities</h3>');
+    
+                    for (var i=0; i<cities.length; i++){
+                        document.write('<li>'+cities[i]+'</li>');
+                    }
+                    
+                    document.write('</div>');
+                }
+    
+                function outputPhotos(photos){
+                    document.write('<div class="inner-box">');
+                    document.write('<h3>Popular Photos</h3>');
+    
+                    for (var i=0; i<photos.length; i++){
+                        document.write('<img src="images/'+photos[i]+'"class ="photo">');
+                    }
+                    document.write('</div>');
+                }
+               
 }
 
 
@@ -63,90 +89,6 @@ function outputCountryBox(name, continent, cities, photos) {
 
 
 // function outputCoutryBox(name, continent, cities,photos) {
-//         document.write('<div class="item"');
-//         document.write('<h2>'+ name+ '</h2>');
-//         document.write('<h4>'+ continent +'</h4>');
-
-//         outputCities(cities);
-        
-//         outputPhotos(photos);
-
-//         document.write('<button>Visit</button>');
-//         document.write('</div>');
-//             function outputCities(cities)
-//             {
-//                 alert(CNcities.length);
-//                 alert(CNcities[0]);
-//                 document.write('<div class="inner-box">');
-//                 document.write('<h3>Cities</h3>');
-
-//                 if (name == "Canada")
-//                 {
-//                     for  ( i = 0; i < CNcities.length; i++)
-//                     {
-//                         cities = document.write('<li>' +CNcities[i]+ '</li>');
-//                     }
-//                 }
-
-//                 if (name == "United States")
-//                 {
-//                     for  ( i = 0; i < UScities.length; i++)
-//                     {
-//                         cities = document.write('<li>' +UScities[i]+ '</li>');
-//                     }
-//                 }
-//                 if (name == "Italy")
-//                 {
-//                     for  (i = 0; i < ITcities.length; i++)
-//                     {
-//                         cities = document.write('<li>' +ITcities[i]+ '</li>');
-//                     }
-//                 }
-//                 if (name == "Spain")
-//                 {
-//                     for  ( i = 0; i < SPcities.length; i++)
-//                     {
-//                        cities =  document.write('<li>' +SPcities[i]+ '</li>');
-//                     }
-//                 }
-//                 document.write('</div>');
-//             }
-
-//             function outputPhotos(photos){
-//                 document.write('<div class="inner-box">');
-//                 document.write('<h3>Popular Photos</h3>');
-
-//                 if (name == "Canada")
-//                 {
-//                     for  (i = 0; i < CNphotos.length; i++)
-//                     {
-//                       photos =  document.write('<li>' +CNphotos[i]+ '</li>');
-//                     }
-//                 }
-
-//                 if (name == "United States")
-//                 {
-//                     for  ( i = 0; i < USphotos.length; i++)
-//                     {
-//                         photos = document.write('<li>' +USphotos[i]+ '</li>');
-//                     }
-//                 }
-//                 if (name == "Italy")
-//                 {
-//                     for  (i = 0; i < ITphotos.length; i++)
-//                     {
-//                         photos = document.write('<li>' +ITphotos[i]+ '</li>');
-//                     }
-//                 }
-//                 if (name == "Spain")
-//                 {
-//                     for  ( i = 0; i < SPphotos.length; i++)
-//                     {
-//                         photos =  document.write('<li>' +SPphotos[i]+ '</li>');
-//                     }
-//                 }
-//                 document.write('</div>');
-//             }
-// }
+//    
 
 
